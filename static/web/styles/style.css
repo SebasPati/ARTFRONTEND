@@ -2,10 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-.c-flex{
-    @apply flex items-center justify-center content-center place-items-center;
+/* VARIAVLES BASE PARA APLICAR TEMAS */
+@layer base{
+    :root{
+        --color-text-base: 14,14,14;
+        --color-text-inverted: 100,100,100;
+        --color-text-muted: 140,140,140;
+    }
 }
 
+
+/* MOSTRAR AL TERMINAR RENDERIZADO DE VUE */
 [v-cloak] {
     display: none;
     }
+
+/* ESTILOS POSICIÓN */
+
+.c-flex{
+    @apply flex items-center justify-center content-center place-items-center;
+}

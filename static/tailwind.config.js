@@ -7,7 +7,7 @@ module.exports = {
     './web/artist/*.html',
     './web/artlover/*.html',
     './web/artistandartlovers/*.html',
-    './static/web/public/*.html'
+    './web/public/*.html'
   ],
   theme: {
     extend: {},
