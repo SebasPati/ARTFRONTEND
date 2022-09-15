@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.stilo1{
-    filter:blur(3px);
-    color:crimson;
-}
-.f{
-    @apply bg-red-500 hover:bg-red-900 ease-in duration-200 shadow-xl shadow-orange-800 hover:shadow-emerald-700;
+.c-flex{
+    @apply flex items-center justify-center content-center place-items-center;
 }
