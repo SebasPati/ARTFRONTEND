@@ -5,3 +5,7 @@
 .c-flex{
     @apply flex items-center justify-center content-center place-items-center;
 }
+
+[v-cloak] {
+    display: none;
+    }

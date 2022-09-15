@@ -729,6 +729,10 @@ video {
   justify-content: center;
 }
 
+[v-cloak] {
+  display: none;
+}
+
 .hover\:bg-red-900:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(127 29 29 / var(--tw-bg-opacity));
