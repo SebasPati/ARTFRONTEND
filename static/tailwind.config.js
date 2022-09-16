@@ -47,7 +47,10 @@ module.exports = {
          }
       },
       fontFamily: {
-        'bahnschrift' : ['Bahnschrift','sans-serif'],
+        bahnschrift : ['Bahnschrift','sans-serif'],
+        quicksand: ['Quicksand','sans-serif'],
+        cinzel: ['Cinzel', 'serif']
+        
       }
     },
   },
