@@ -6,8 +6,8 @@
 @import url('../assets/bahnschrift.ttf=?family=Bahnschrift:wght@300;400;500;600;700;800&display=swap');
 
 /* VARIABLES BASE PARA APLICAR TEMAS */
-@layer base{
-    :root{
+@layer base {
+    :root {
         --color-text-base: 0, 82, 70;
         --color-text-inverted: 240, 255, 252;
         --color-text-muted: 75, 128, 118;
@@ -18,37 +18,50 @@
         --color-button-muted: 75, 128, 118;
         --color-button-disabled: 214, 226, 223;
     }
+
+    .theme2 {}
 }
 
 /* VARIABLES AUXILIARES SOLO PARA VER COLORES PREVIO A APLICARLOS ARRIBA */
-.color_root{
-    --color-text-base:rgb(0, 82, 70);
-    --color-text-inverted:rgb(240, 255, 252);
+.color_root {
+    --color-text-base: rgb(0, 82, 70);
+    --color-text-inverted: rgb(240, 255, 252);
     --color-text-muted: rgb(75, 128, 118);
     --color-text-accent: rgb(209, 125, 0);
     --color-normal: rgb(249, 249, 249);
-    --color-button-base:rgb(195, 253, 241);
-    --color-button-accent:rgb(209, 125, 0);
-    --color-button-muted:rgb(75, 128, 118);
-    --color-button-disabled:rgb(214, 226, 223);
+    --color-button-base: rgb(195, 253, 241);
+    --color-button-accent: rgb(209, 125, 0);
+    --color-button-muted: rgb(75, 128, 118);
+    --color-button-disabled: rgb(214, 226, 223);
 }
 
+.color_theme2 {
+    --color-text-base: rgb(32, 6, 0);
+    --color-text-inverted: rgb(255, 248, 246);
+    --color-text-muted: rgb(60, 56, 55);
+    --color-text-accent: rgb(0, 110, 94);
+    --color-normal: rgb(249, 249, 249);
+    --color-button-base: rgb(224, 224, 224);
+    --color-button-accent: rgb(209, 125, 0);
+    --color-button-muted: rgb(75, 128, 118);
+    --color-button-disabled: rgb(196, 158, 100);
+}
 
 /* MOSTRAR AL TERMINAR RENDERIZADO DE VUE */
 [v-cloak] {
     display: none;
-    }
+}
 
 /* ESTILOS POSICIÓN */
 
-.c-flex{
+.c-flex {
     @apply flex items-center justify-center content-center place-items-center;
 }
 
-.boton0{
+.boton0 {
     @apply bg-white border border-black py-1 px-2;
 }
 
-.boton1{
-    @apply p-3 m-2 rounded-md text-skin-base font-bahnschrift bg-skin-normal shadow-[1px_1px_5px_rgba(var(--color-button-muted),0.4)] hover:rounded-2xl hover:text-skin-inverted hover:bg-skin-accent transition-all ease-in-out duration-300;
+.boton1 {
+    @apply p-3 m-2 rounded-md text-skin-base font-bahnschrift bg-skin-normal shadow-[1px_1px_5px_rgba(var(--color-button-muted),1)] hover:rounded-2xl hover:text-skin-inverted hover:bg-skin-accent transition-all ease-in-out duration-300;
 }

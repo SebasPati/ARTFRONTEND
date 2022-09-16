@@ -410,7 +410,7 @@ video {
   height: auto;
 }
 
-:root{
+:root {
   --color-text-base: 0, 82, 70;
   --color-text-inverted: 240, 255, 252;
   --color-text-muted: 75, 128, 118;
@@ -420,6 +420,9 @@ video {
   --color-button-accent: 209, 125, 0;
   --color-button-muted: 75, 128, 118;
   --color-button-disabled: 214, 226, 223;
+}
+
+.theme2 {
 }
 
 *, ::before, ::after {
@@ -1064,8 +1067,8 @@ video {
           text-decoration-line: underline;
 }
 
-.shadow-\[1px_1px_5px_rgba\(var\(--color-button-muted\)\2c 0\.4\)\] {
-  --tw-shadow: 1px 1px 5px rgba(var(--color-button-muted),0.4);
+.shadow-\[1px_1px_5px_rgba\(var\(--color-button-muted\)\2c 1\)\] {
+  --tw-shadow: 1px 1px 5px rgba(var(--color-button-muted),1);
   --tw-shadow-colored: 1px 1px 5px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
@@ -1127,16 +1130,28 @@ video {
 
 /* VARIABLES AUXILIARES SOLO PARA VER COLORES PREVIO A APLICARLOS ARRIBA */
 
-.color_root{
-  --color-text-base:rgb(0, 82, 70);
-  --color-text-inverted:rgb(240, 255, 252);
+.color_root {
+  --color-text-base: rgb(0, 82, 70);
+  --color-text-inverted: rgb(240, 255, 252);
   --color-text-muted: rgb(75, 128, 118);
   --color-text-accent: rgb(209, 125, 0);
   --color-normal: rgb(249, 249, 249);
-  --color-button-base:rgb(195, 253, 241);
-  --color-button-accent:rgb(209, 125, 0);
-  --color-button-muted:rgb(75, 128, 118);
-  --color-button-disabled:rgb(214, 226, 223);
+  --color-button-base: rgb(195, 253, 241);
+  --color-button-accent: rgb(209, 125, 0);
+  --color-button-muted: rgb(75, 128, 118);
+  --color-button-disabled: rgb(214, 226, 223);
+}
+
+.color_theme2 {
+  --color-text-base: rgb(32, 6, 0);
+  --color-text-inverted: rgb(255, 248, 246);
+  --color-text-muted: rgb(60, 56, 55);
+  --color-text-accent: rgb(0, 110, 94);
+  --color-normal: rgb(249, 249, 249);
+  --color-button-base: rgb(224, 224, 224);
+  --color-button-accent: rgb(209, 125, 0);
+  --color-button-muted: rgb(75, 128, 118);
+  --color-button-disabled: rgb(196, 158, 100);
 }
 
 /* MOSTRAR AL TERMINAR RENDERIZADO DE VUE */
@@ -1176,7 +1191,7 @@ video {
   font-family: Bahnschrift, sans-serif;
   --tw-text-opacity: 1;
   color: rgba(var(--color-text-base),var(--tw-text-opacity));
-  --tw-shadow: 1px 1px 5px rgba(var(--color-button-muted),0.4);
+  --tw-shadow: 1px 1px 5px rgba(var(--color-button-muted),1);
   --tw-shadow-colored: 1px 1px 5px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   transition-property: all;
