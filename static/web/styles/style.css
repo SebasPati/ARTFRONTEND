@@ -132,20 +132,40 @@
     @apply p-3 m-2 rounded-md text-sm text-skin-base font-bahnschrift bg-skin-normal shadow-[1px_1px_5px_rgba(var(--color-button-muted),0.3)] hover:shadow-[1px_1px_5px_rgba(var(--color-button-accent),0.6)] hover:rounded-2xl hover:text-skin-inverted hover:bg-skin-accent transition-all ease-in-out duration-300;
 }
 
+.boton1s{
+    @apply p-1 m-1 h-9 rounded-md text-xs text-skin-base font-bahnschrift bg-skin-normal shadow-[1px_1px_5px_rgba(var(--color-button-muted),0.3)] hover:shadow-[1px_1px_5px_rgba(var(--color-button-accent),0.6)] hover:rounded-2xl hover:text-skin-inverted hover:bg-skin-accent transition-all ease-in-out duration-300;
+}
+
 .boton2 {
     @apply p-4 m-2 rounded-xl text-sm text-skin-base font-bahnschrift bg-skin-base shadow-[1px_1px_5px_rgba(var(--color-button-base),0.7)] hover:shadow-[1px_1px_5px_rgba(var(--color-button-muted),0.6)] hover:rounded-2xl hover:text-skin-inverted hover:bg-skin-muted transition-all ease-in-out duration-300;
 }
 
+.boton2s {
+    @apply p-1 m-2 h-9 rounded-xl text-xs text-skin-base font-bahnschrift bg-skin-base shadow-[1px_1px_5px_rgba(var(--color-button-base),0.7)] hover:shadow-[1px_1px_5px_rgba(var(--color-button-muted),0.6)] hover:rounded-2xl hover:text-skin-inverted hover:bg-skin-muted transition-all ease-in-out duration-300;
+}
+
 .boton3 {
-    @apply p-3 m-3 rounded-md text-sm text-skin-inverted bg-skin-muted border border-skin-normal shadow-[0px_8px_24px_rgba(var(--color-button-muted),0.2)] hover:bg-skin-accent hover:shadow-[0px_8px_24px_rgba(var(--color-button-accent),0.2)] transition-all ease-in-out duration-200;
+    @apply p-3 m-3 rounded-md text-sm text-skin-inverted font-semibold bg-skin-muted border border-skin-normal shadow-[0px_8px_24px_rgba(var(--color-button-muted),0.2)] hover:bg-skin-accent hover:shadow-[0px_8px_24px_rgba(var(--color-button-accent),0.2)] transition-all ease-in-out duration-200;
+}
+
+.boton3s {
+    @apply p-1 m-3 h-9 rounded-md text-xs text-skin-inverted font-semibold bg-skin-muted border border-skin-normal shadow-[0px_8px_24px_rgba(var(--color-button-muted),0.2)] hover:bg-skin-accent hover:shadow-[0px_8px_24px_rgba(var(--color-button-accent),0.2)] transition-all ease-in-out duration-200;
 }
 
 .boton4 {
-    @apply p-4 m-3 rounded-full text-skin-inverted text-sm bg-skin-muted blur-sm border border-skin-normal shadow-[0px_8px_24px_rgba(var(--color-button-muted),0.2)] hover:bg-skin-accent hover:shadow-[0px_8px_24px_rgba(var(--color-button-accent),0.2)] transition-all hover:blur-0 ease-in-out duration-200;
+    @apply p-4 m-3 rounded-full text-skin-inverted text-sm bg-skin-muted  border opacity-60 border-skin-normal shadow-[0px_8px_24px_rgba(var(--color-button-muted),0.2)] hover:bg-skin-accent hover:shadow-[0px_8px_24px_rgba(var(--color-button-accent),0.2)] transition-all hover:opacity-100 ease-in-out duration-200;
+}
+
+.boton4s {
+    @apply p-1 m-2 h-10 rounded-full text-skin-inverted text-xs bg-skin-muted  border opacity-60 border-skin-normal shadow-[0px_8px_24px_rgba(var(--color-button-muted),0.2)] hover:bg-skin-accent hover:shadow-[0px_8px_24px_rgba(var(--color-button-accent),0.2)] transition-all hover:opacity-100 ease-in-out duration-200;
 }
 
 .boton5 {
-    @apply p-3 m-3 rounded bg-skin-normal text-skin-base text-sm font-quicksand hover:shadow-[0px_1px_4px_rgba(var(--color-button-accent),0.6)] transition-all ease-in-out duration-200;
+    @apply p-3 m-3 rounded bg-skin-normal text-skin-base text-sm font-quicksand hover:shadow-[0px_1px_4px_rgba(var(--color-button-accent),0.3)] transition-all ease-in-out duration-200;
+}
+
+.boton5s {
+    @apply p-1 m-2 rounded bg-skin-normal text-skin-base text-xs font-quicksand hover:shadow-[0px_1px_4px_rgba(var(--color-button-accent),0.3)] transition-all ease-in-out duration-200;
 }
 
 
@@ -164,6 +184,11 @@
     backdrop-filter: blur(7px);
     -webkit-backdrop-filter: blur(7px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: .4s;
+}
+
+.glass1:hover{
+    background: rgba(var(--color-normal), 0.6);
 }
 
 
