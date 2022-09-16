@@ -46,14 +46,14 @@
     }
 
     .theme4 {
-        --color-text-base: 245, 245, 245;
+        --color-text-base: 252, 252, 252;
         --color-text-inverted: 15, 15, 15;
         --color-text-muted: 206, 206, 206;
         --color-text-accent: 255, 255, 255;
         --color-normal: 33, 33, 33;
         --color-button-base: 18, 18, 18;
-        --color-button-accent: 227, 227, 227;
-        --color-button-muted: 103, 103, 103;
+        --color-button-accent: 203, 203, 203;
+        --color-button-muted: 84, 84, 84;
         --color-button-disabled: 75, 75, 75;
     }
 }
@@ -99,14 +99,14 @@
 }
 
 .color_theme4 {
-    --color-text-base: rgb(245, 245, 245);
+    --color-text-base: rgb(252, 252, 252);
     --color-text-inverted: rgb(15, 15, 15);
     --color-text-muted: rgb(206, 206, 206);
     --color-text-accent: rgb(255, 255, 255);
     --color-normal: rgb(33, 33, 33);
     --color-button-base: rgb(45, 45, 45);
-    --color-button-accent: rgb(227, 227, 227);
-    --color-button-muted: rgb(103, 103, 103);
+    --color-button-accent: rgb(203, 203, 203);
+    --color-button-muted: rgb(84, 84, 84);
     --color-button-disabled: rgb(75, 75, 75);
 }
 
@@ -171,6 +171,17 @@
 
 /* OTROS ESTILOS PROPIOS */
 
+.sus{
+    background-size: 200% 200% !important;
+    background: linear-gradient(90deg, rgba(var(--color-button-accent),1) 0%, rgba(var(--color-button-accent),1) 50%, rgba(var(--color-text-base),1) 50%);
+    transition: .4s;
+    background-position: right;
+}
+
+.sus:hover{
+    background-position: left;
+}
+
 .logo01{
     width: 30px;
     background: var(--logo-1);
@@ -180,7 +191,7 @@
 
 .glass1 {
     background: rgba(var(--color-normal), 0.2);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(var(--color-text-base), 0.1);
     backdrop-filter: blur(7px);
     -webkit-backdrop-filter: blur(7px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);

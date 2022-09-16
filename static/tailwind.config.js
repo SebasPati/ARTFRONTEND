@@ -46,12 +46,22 @@ module.exports = {
           disabled: withOpacity('--color-button-disabled')
          }
       },
+      gradientColorStops: {
+        normal: withOpacity('--color-normal'),
+        base: withOpacity('--color-button-base'),
+        accent: withOpacity('--color-button-accent'),
+        muted: withOpacity('--color-button-muted'),
+        disabled: withOpacity('--color-button-disabled')
+      },
       fontFamily: {
         bahnschrift : ['Bahnschrift','sans-serif'],
         quicksand: ['Quicksand','sans-serif'],
         cinzel: ['Cinzel', 'serif']
-        
-      }
+      },
+      aspectRatio: {
+        card1: '8.6/5.4',
+        card2: '5.4/8.6'
+      },
     },
   },
   plugins: [],

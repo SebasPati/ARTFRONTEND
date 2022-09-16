@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/tailwind.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="/web/styles/tailwind.css">
+    <link rel="shortcut icon" href="/web/assets/logo01.png" type="image/x-icon">
+    <title>Artist den</title>
 </head>
 
 <body class=" bg-gray-100">
 
     <div id="app" v-cloak>
         <div :class="tema=='tema_1' ? '' : tema=='tema_2' ? 'theme2' : tema=='tema_3' ? 'theme3' : tema=='tema_4' ? 'theme4' : ''"
-            class="bg-skin-normal aparecer2 w-full min-h-screen flex flex-col aparecer2">
+            class="w-full min-h-screen flex flex-col bg-skin-normal aparecer2">
 
 
             <!-- HEADER CON NAV -->
@@ -21,7 +22,7 @@
 
                 <div class=" glass1 flex justify-between w-screen p-2 fixed z-0 place-items-center">
 
-                    <img :src=" tema=='tema_4' ? '../assets/logo02.png' : '../assets/logo01.png'" class="w-[3.5%] h-[3.5%] ml-4 aparecer transition-all ease-in-out duration-300" alt="logo">
+                    <img :src=" tema=='tema_4' ? '/web/assets/logo02.png' : '/web/assets/logo01.png'" class="w-[3.5%] h-[3.5%] ml-4 aparecer transition-all ease-in-out duration-300" alt="logo">
                     <nav class="flex">
                         <div class="flex text-skin-base font-bahnschrift">
                             <a class="mr-6 ml-6 " href="/index.html">Home</a>
@@ -33,16 +34,6 @@
                             <a class="mr-6 ml-6" href="/web/public/wallofcourses.html">Courses</a>
                             <div class="font-xs opacity-30">|</div> 
                             <a class="mr-6 ml-6" href="/web/public/shoppingcart.html">Shop cart</a>
-
-<!--                             <a class="mr-6 ml-6" href="/index.html">Home</a>
-                            <div class="font-xs opacity-30">|</div> 
-                            <a class="mr-6 ml-6" href="/web/public/wallofartworks.html">Store</a>
-                            <div class="font-xs opacity-30">|</div> 
-                            <a class="mr-6 ml-6" href="/web/public/wallofartist.html">Artists</a>
-                            <div class="font-xs opacity-30">|</div> 
-                            <a class="mr-6 ml-6" href="/web/public/wallofcourses.html">Courses</a>
-                            <div class="font-xs opacity-30">|</div> 
-                            <a class="mr-6 ml-6" href="/web/public/shoppingcart.html">Shop cart</a> -->
                         </div>
                         <div class=" mr-6 ml-6">
                             <a class="mr-6 ml-6" href="javascript:void(0);">Log in</a>
@@ -52,38 +43,26 @@
 
                 </div>
 
-                <div class="container pt-24">
-                    <div class="block b-1"></div>
-                    <div class="block b-2"></div>
-                    <div class="block b-3"></div>
-                    <div class="block b-4"></div>
-                    <div class="block b-5"></div>
-                    <div class="block b-6"></div>
-                    <div class="block b-7"></div>
-                </div>
-                <div class="overlay"></div>
-                <p class="title">lorem</p>
-
             </header>
 
 
             <!-- CUERPO -->
-            <main class=" bg-skin-muted mx-24">
+            <main class=" bg-skin-muted mt-24">
                 
 
             </main>
             <div class="w-1/2">
-                <button class="boton1" @click="theme(1)">TEMA 1</button>
-                <button class="boton1" @click="theme(2)">TEMA 2</button>
-                <button class="boton1" @click="theme(3)">TEMA 3</button>
-                <button class="boton1" @click="theme(4)">TEMA 4</button>
+                <button class="boton1s" @click="theme(1)">TEMA 1</button>
+                <button class="boton1s" @click="theme(2)">TEMA 2</button>
+                <button class="boton1s" @click="theme(3)">TEMA 3</button>
+                <button class="boton1s" @click="theme(4)">TEMA 4</button>
 
             </div>
             <!-- FOOTER -->
             <footer class="font-quicksand">
                 <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
                   <div class="w-64 flex-shrink-0 md:mx-0 mx-auto md:text-left md:mt-0 mt-10 flex items-center md:justify-start justify-center place-items-center content-center">
-                    <img :src=" tema=='tema_4' ? '../assets/logo02L.png' : '../assets/logo01L.png'" class="w-[60%] h-[60%] aparecer transition-all ease-in-out duration-300" alt="logo">
+                    <img :src=" tema=='tema_4' ? '/web/assets/logo02L.png' : '/web/assets/logo01L.png'" class="w-[60%] h-[60%] aparecer transition-all ease-in-out duration-300" alt="logo">
                   </div>
                   <div class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
                     <div class="lg:w-1/4 md:w-1/2 w-full px-4">
@@ -192,7 +171,7 @@
         </div>
     </div>
     <script src="https://unpkg.com/vue@3"></script>
-    <script src="../scripts/artistpage.js"></script>
+    <script src="/web/scripts/artistpage.js"></script>
 </body>
 
 </html>
