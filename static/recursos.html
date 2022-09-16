@@ -10,20 +10,20 @@
 </head>
 <body>
 
-<div id="app" v-cloak class="c-flex min-h-full w-full transition-all ease-in-out duration-500 bg-skin-normal">
+<div id="app" v-cloak class="c-flex min-h-full w-full transition-all ease-in-out duration-500 bg-skin-normal ">
 
-    <div :class="tema=='tema_1' ? '' : tema=='tema_2' ? 'theme2' : tema=='tema_3' ? 'theme3' : tema=='tema_4' ? 'theme4' : ''" class="w-full min-h-screen flex flex-col bg-skin-normal">
+    <div :class="tema=='tema_1' ? '' : tema=='tema_2' ? 'theme2' : tema=='tema_3' ? 'theme3' : tema=='tema_4' ? 'theme4' : ''" class="w-full min-h-screen flex flex-col bg-skin-normal aparecer2">
         
         <div class="">
 
-            <div class="fixed glass1 w-full">
+            <div class="fixed flex glass1 w-full place-content-between">
 
                 <button class="boton1" @click="theme(1)">TEMA 1</button>
                 <button class="boton1" @click="theme(2)">TEMA 2</button>
                 <button class="boton1" @click="theme(3)">TEMA 3</button>
                 <button class="boton1" @click="theme(4)">TEMA 4</button>
 
-                <div class="w-8 h-10 logo-1"></div>
+                <img :src=" tema=='tema_4' ? './web/assets/logo02.png' : './web/assets/logo01.png'" class="w-[5%] p-3 aparecer transition-all ease-in-out duration-300" alt="">
     
             </div>
     
@@ -36,7 +36,9 @@
             </div>
     
 
-        </div>
+        </div class="m-3 p-4">
+
+        
 
         <div>
 
