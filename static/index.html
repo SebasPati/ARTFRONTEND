@@ -14,7 +14,7 @@
     <!--     <div id="app" v-cloak> -->
 
     <!-- HEADER CON NAV -->
-    <!-- <header>
+    <header>
 
         <div class="bg-slate-400 bg-opacity-30 flex justify-between w-screen p-7 fixed z-0">
 
@@ -47,7 +47,7 @@
         <div class="overlay"></div>
         <p class="title">lorem</p>
 
-    </header> -->
+    </header>
 
 
 
@@ -55,21 +55,28 @@
 
     <main>
         <!-- SECTION Publicity -->
-        <section class="bg-green-800 c-flex flex-col h-screen px-5 ">
-            <div class=" h-4/6  flex flex-col justify-between">
-                <h2 class="text-center">The best place for the best works of art!</h2>
-                <div class="bg-gray-400 h-5/6 w-full">imagen</div>
+        <section class="bg-skin-muted text-skin-inverted c-flex flex-col h-screen px-5 ">
+            <h2 class="hidden md:flex mb-6">The best place for the best works of art!</h2>
+            <div class=" md:flex md:mt-3 flex flex-col justify-center items-center  md:flex-row">
+                <div class=" h-4/6  md:h-auto flex flex-col justify-between items-center ">
+                    <h2 class="text-center md:hidden mb-3">The best place for the best works of art!</h2>
+                    <div class="bg-gray-400 h-[400px] w-[250px] md:h-[450px] md:w-[375px]">imagen</div>
+                </div>
+                <p class="mt-3 text-center md:w-80 md:first-letter:ml-4 ">Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit.
+                    Necessitatibus
+                    asperiores
+                    laudantium fuga
+                    sapiente in </p>
             </div>
-            <p class="mt-3 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus
-                asperiores
-                laudantium fuga
-                sapiente in </p>
         </section>
 
         <!-- SECTION publicity2 -->
-        <section class="bg-red-400 c-flex flex-col h-screen px-5">
-            <div class="bg-gray-400 w-full h-1/4">imagen</div>
-            <p class="mt-4 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum incidunt sed ex
+        <section class="bg-red-400 c-flex flex-col h-screen px-5 md:flex-row">
+            <div class="bg-gray-400 w-[300px] h-[200px] md:w-[600px] md:h-[400px]">imagen</div>
+            <p class="mt-4 text-center md:w-80 md:ml-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                incidunt
+                sed ex
                 consequatur
                 cupiditate,
                 illum provident laboriosam nemo. Ad, magnam?</p>
@@ -81,8 +88,8 @@
         </section>
 
         <!-- SECTION tiktok video -->
-        <section class=" bg-red-300 c-flex flex-col h-screen px-5">
-            <div class="bg-gray-400 w-full h-3/4">video</div>
+        <section class=" bg-red-300 c-flex flex-col h-screen px-5 md:flex md:flex-row md:justify-evenly">
+            <div class="bg-gray-400 w-[300px] h-[400px]">video</div>
             <div class="mt-3 text-center">
                 <p>Do you want to see more?</p>
                 <button class="mt-2 bg-white border border-black py-1 px-2">Log in</button>
@@ -90,45 +97,50 @@
         </section>
 
         <!-- SECTION artists -->
-        <section class="bg-red-500 c-flex flex-col h-screen px-5">
-            <h2>Some artists from here</h2>
-            <div class="bg-gray-700 w-full h-3/5 mt-3 flex flex-col justify-evenly ">
+        <section class="bg-red-500 c-flex flex-col h-screen ">
+
+            <h2 class="">Some artists from here</h2>
+            </div>
+            <div class="bg-gray-700 w-full md:w-[500px] h-3/5 mt-3 flex flex-col justify-evenly ">
                 <div class="c-flex">
-                    <div class="bg-white w-24 h-20">sdf</div>
-                    <div class="border border-white w-40 h-20">ppp</div>
+                    <div class="bg-white w-24 h-20 md:h-28 md:w-32">sdf</div>
+                    <div class="border border-white w-40 h-20 md:h-28 md:w-72 md:ml-4">ppp</div>
                 </div>
                 <div class="c-flex">
-                    <div class="bg-white w-24 h-20">sdf</div>
-                    <div class="border border-white w-40  h-20">ppp</div>
+                    <div class="bg-white w-24 h-20 md:h-28 md:w-32">sdf</div>
+                    <div class="border border-white w-40  h-20 md:h-28 md:w-72 md:ml-4">ppp</div>
                 </div>
                 <div class="c-flex">
-                    <div class="bg-white w-24 h-20">sdf</div>
-                    <div class="border border-white w-40  h-20">ppp</div>
+                    <div class="bg-white w-24 h-20 md:h-28 md:w-32">sdf</div>
+                    <div class="border border-white w-40  h-20 md:h-28 md:w-72 md:ml-4">ppp</div>
                 </div>
             </div>
         </section>
 
         <!-- SECTION Invitation to sign in -->
-        <section class="bg-gray-600 c-flex  h-24 my-6 mx-3 px-5">
+        <section class="bg-gray-600 c-flex  h-24 my-6 mx-3 px-5 md:flex md:justify-around">
             <p>New here?</p>
             <button class="ml-2 bg-white border border-black py-1 px-2">Sign in</button>
         </section>
 
         <!-- SECTION some artworks (modificar para que sea dinamico) -->
         <section>
-            <section class="bg-red-400 flex justify-around items-center h-screen px-5 flex-wrap content-evenly">
-                <div class="bg-teal-600 w-20 h-20">img</div>
-                <div class="bg-teal-600 w-20 h-20">img</div>
-                <div class="bg-teal-600 w-20 h-20">img</div>
-                <div class="bg-teal-600 w-20 h-20">img</div>
-                <div class="bg-teal-600 w-20 h-20">img</div>
-                <div class="bg-teal-600 w-20 h-20">img</div>
-                <div class="bg-teal-600 w-20 h-20">img</div>
-                <div class="bg-teal-600 w-20 h-20">img</div>
-                <div class="bg-teal-600 w-20 h-20">img</div>
-                <div class="bg-teal-600 w-20 h-20">img</div>
-                <div class="bg-teal-600 w-20 h-20">img</div>
-                <div class="bg-teal-600 w-20 h-20">img</div>
+            <section
+                class="bg-red-400 flex justify-around items-center h-screen md:h-[1000px] md:h-auto px-5 flex-wrap content-evenly md:px-24">
+
+                <div class="bg-teal-600 w-20 h-20 md:w-[250px] md:h-[250px]">img</div>
+                <div class="bg-teal-600 w-20 h-20 md:w-[250px] md:h-[250px]">img</div>
+                <div class="bg-teal-600 w-20 h-20 md:w-[250px] md:h-[250px]">img</div>
+                <div class="bg-teal-600 w-20 h-20 md:w-[250px] md:h-[250px]">img</div>
+                <div class="bg-teal-600 w-20 h-20 md:w-[250px] md:h-[250px]">img</div>
+                <div class="bg-teal-600 w-20 h-20 md:w-[250px] md:h-[250px]">img</div>
+                <div class="bg-teal-600 w-20 h-20 md:w-[250px] md:h-[250px]">img</div>
+                <div class="bg-teal-600 w-20 h-20 md:w-[250px] md:h-[250px]">img</div>
+                <div class="bg-teal-600 w-20 h-20 md:w-[250px] md:h-[250px]">img</div>
+                <div class="bg-teal-600 w-20 h-20 md:w-[250px] md:h-[250px]">img</div>
+                <div class="bg-teal-600 w-20 h-20 md:w-[250px] md:h-[250px]">img</div>
+                <div class="bg-teal-600 w-20 h-20 md:w-[250px] md:h-[250px]">img</div>
+
             </section>
         </section>
 
