@@ -37,6 +37,15 @@ module.exports = {
           disabled: withOpacity('--color-button-disabled')
         }
       },
+      borderColor: {
+         skin:{
+          normal: withOpacity('--color-normal'),
+          base: withOpacity('--color-button-base'),
+          accent: withOpacity('--color-button-accent'),
+          muted: withOpacity('--color-button-muted'),
+          disabled: withOpacity('--color-button-disabled')
+         }
+      },
       fontFamily: {
         'bahnschrift' : ['Bahnschrift','sans-serif'],
       }

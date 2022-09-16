@@ -19,7 +19,41 @@
         --color-button-disabled: 214, 226, 223;
     }
 
-    .theme2 {}
+    .theme2 {
+        --color-text-base: 32, 6, 0;
+        --color-text-inverted: 255, 248, 246;
+        --color-text-muted: 60, 56, 55;
+        --color-text-accent: 0, 110, 94;
+        --color-normal: 249, 249, 249;
+        --color-button-base: 224, 224, 224;
+        --color-button-accent: 20, 145, 122;
+        --color-button-muted: 75, 128, 118;
+        --color-button-disabled: 196, 158, 100;        
+    }
+
+    .theme3{
+        --color-text-base: 0, 30, 36;
+        --color-text-inverted: 240, 253, 255;
+        --color-text-muted: 255, 56, 189;
+        --color-text-accent: 0, 177, 211;
+        --color-normal: 249, 249, 249;
+        --color-button-base: 0, 177, 211;
+        --color-button-accent: 255, 56, 189;
+        --color-button-muted: 209, 125, 0;
+        --color-button-disabled: 103, 191, 208;
+    }
+
+    .theme4{
+        --color-text-base: 245, 245, 245;
+        --color-text-inverted: 15, 15, 15;
+        --color-text-muted: 206, 206, 206;
+        --color-text-accent: 255, 255, 255;
+        --color-normal: 33, 33, 33;
+        --color-button-base: 18, 18, 18;
+        --color-button-accent: 227, 227, 227;
+        --color-button-muted: 103, 103, 103;
+        --color-button-disabled: 75, 75, 75;
+    }
 }
 
 /* VARIABLES AUXILIARES SOLO PARA VER COLORES PREVIO A APLICARLOS ARRIBA */
@@ -39,12 +73,36 @@
     --color-text-base: rgb(32, 6, 0);
     --color-text-inverted: rgb(255, 248, 246);
     --color-text-muted: rgb(60, 56, 55);
-    --color-text-accent: rgb(0, 110, 94);
+    --color-text-accent: rgb(4, 161, 138);
     --color-normal: rgb(249, 249, 249);
     --color-button-base: rgb(224, 224, 224);
-    --color-button-accent: rgb(209, 125, 0);
+    --color-button-accent: rgb(20, 145, 122);
     --color-button-muted: rgb(75, 128, 118);
     --color-button-disabled: rgb(196, 158, 100);
+}
+
+.color_theme3 {
+    --color-text-base: rgb(0, 30, 36);
+    --color-text-inverted: rgb(240, 253, 255);
+    --color-text-muted: rgb(255, 56, 189);
+    --color-text-accent: rgb(0, 177, 211);
+    --color-normal: rgb(249, 249, 249);
+    --color-button-base: rgb(0, 177, 211);
+    --color-button-accent: rgb(255, 56, 189);
+    --color-button-muted: rgb(209, 125, 0);
+    --color-button-disabled: rgb(103, 191, 208);
+}
+
+.color_theme4 {
+    --color-text-base: rgb(245, 245, 245);
+    --color-text-inverted: rgb(15, 15, 15);
+    --color-text-muted: rgb(206, 206, 206);
+    --color-text-accent: rgb(255, 255, 255);
+    --color-normal: rgb(33, 33, 33);
+    --color-button-base: rgb(45, 45, 45);
+    --color-button-accent: rgb(227, 227, 227);
+    --color-button-muted: rgb(103, 103, 103);
+    --color-button-disabled: rgb(75, 75, 75);
 }
 
 /* MOSTRAR AL TERMINAR RENDERIZADO DE VUE */
@@ -63,5 +121,13 @@
 }
 
 .boton1 {
-    @apply p-3 m-2 rounded-md text-skin-base font-bahnschrift bg-skin-normal shadow-[1px_1px_5px_rgba(var(--color-button-muted),1)] hover:rounded-2xl hover:text-skin-inverted hover:bg-skin-accent transition-all ease-in-out duration-300;
+    @apply p-3 m-2 rounded-md text-skin-base font-bahnschrift bg-skin-normal shadow-[1px_1px_5px_rgba(var(--color-button-muted),0.3)] hover:shadow-[1px_1px_5px_rgba(var(--color-button-accent),0.6)] hover:rounded-2xl hover:text-skin-inverted hover:bg-skin-accent transition-all ease-in-out duration-300;
+}
+
+.boton2 {
+    @apply p-4 m-2 rounded-xl text-skin-base font-bahnschrift bg-skin-base shadow-[1px_1px_5px_rgba(var(--color-button-base),0.7)] hover:shadow-[1px_1px_5px_rgba(var(--color-button-muted),0.6)] hover:rounded-2xl hover:text-skin-inverted hover:bg-skin-muted transition-all ease-in-out duration-300;
+}
+
+.boton3 {
+    @apply p-3 m-3 rounded-md text-skin-inverted bg-skin-muted border border-skin-normal shadow-[0px_8px_24px_rgba(var(--color-button-muted),0.2)] hover:bg-skin-accent hover:shadow-[0px_8px_24px_rgba(var(--color-button-accent),0.2)] transition-all ease-in-out duration-200; 
 }
