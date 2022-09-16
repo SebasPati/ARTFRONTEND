@@ -2,13 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-/* VARIAVLES BASE PARA APLICAR TEMAS */
+/* FUENTES */
+@import url('../assets/bahnschrift.ttf=?family=Bahnschrift:wght@300;400;500;600;700;800&display=swap');
+
+/* VARIABLES BASE PARA APLICAR TEMAS */
 @layer base{
     :root{
-        --color-text-base: 14,14,14;
-        --color-text-inverted: 100,100,100;
-        --color-text-muted: 140,140,140;
+        --color-text-base: 0, 82, 70;
+        --color-text-inverted: 240, 255, 252;
+        --color-text-muted: 75, 128, 118;
+        --color-text-accent: 209, 125, 0;
+        --color-normal: 249, 249, 249;
+        --color-button-base: 195, 253, 241;
+        --color-button-accent: 209, 125, 0;
+        --color-button-muted: 75, 128, 118;
+        --color-button-disabled: 214, 226, 223;
     }
+}
+
+/* VARIABLES AUXILIARES SOLO PARA VER COLORES PREVIO A APLICARLOS ARRIBA */
+.color_root{
+    --color-text-base:rgb(0, 82, 70);
+    --color-text-inverted:rgb(240, 255, 252);
+    --color-text-muted: rgb(75, 128, 118);
+    --color-text-accent: rgb(209, 125, 0);
+    --color-normal: rgb(249, 249, 249);
+    --color-button-base:rgb(195, 253, 241);
+    --color-button-accent:rgb(209, 125, 0);
+    --color-button-muted:rgb(75, 128, 118);
+    --color-button-disabled:rgb(214, 226, 223);
 }
 
 
@@ -21,4 +43,12 @@
 
 .c-flex{
     @apply flex items-center justify-center content-center place-items-center;
+}
+
+.boton0{
+    @apply bg-white border border-black py-1 px-2;
+}
+
+.boton1{
+    @apply p-3 m-2 rounded-md text-skin-base font-bahnschrift bg-skin-normal shadow-[1px_1px_5px_rgba(var(--color-button-muted),0.4)] hover:rounded-2xl hover:text-skin-inverted hover:bg-skin-accent transition-all ease-in-out duration-300;
 }
