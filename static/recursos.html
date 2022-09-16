@@ -10,24 +10,43 @@
 </head>
 <body>
 
-<div id="app" v-cloak class="c-flex min-h-full w-full transition-all ease-in-out duration-500">
+<div id="app" v-cloak class="c-flex min-h-full w-full transition-all ease-in-out duration-500 bg-skin-normal">
 
-    <div :class="tema=='tema_1' ? '' : tema=='tema_2' ? 'theme2' : tema=='tema_3' ? 'theme3' : tema=='tema_4' ? 'theme4' : ''" class="w-full c-flex bg-skin-normal">
+    <div :class="tema=='tema_1' ? '' : tema=='tema_2' ? 'theme2' : tema=='tema_3' ? 'theme3' : tema=='tema_4' ? 'theme4' : ''" class="w-full min-h-screen flex flex-col bg-skin-normal">
         
-        <div class="w-1/2">
+        <div class="">
 
-            <button class="boton1" @click="theme(1)">TEMA 1</button>
-            <button class="boton1" @click="theme(2)">TEMA 2</button>
-            <button class="boton1" @click="theme(3)">TEMA 3</button>
-            <button class="boton1" @click="theme(4)">TEMA 4</button>
+            <div class="fixed glass1 w-full">
+
+                <button class="boton1" @click="theme(1)">TEMA 1</button>
+                <button class="boton1" @click="theme(2)">TEMA 2</button>
+                <button class="boton1" @click="theme(3)">TEMA 3</button>
+                <button class="boton1" @click="theme(4)">TEMA 4</button>
+
+                <div class="w-8 h-10 logo-1"></div>
+    
+            </div>
+    
+            <div class="flex pt-20">
+                <button class="boton1 w-24 h-14">BOTON A</button>
+                <button class="boton2 w-28 h-14">BOTON B</button>
+                <button class="boton3 w-24 h-14">BOTON C</button>
+                <button class="boton4 w-28 h-14">BOTON D</button>
+                <button class="boton5 w-24 h-14">BOTON E</button>
+            </div>
+    
 
         </div>
 
-        <button class="boton1">BOTON A</button>
-        <button class="boton2">BOTON B</button>
-        <button class="boton3">BOTON C</button>
-        <button class="boton4">BOTON D</button>
-        <button class="boton5">BOTON E</button>
+        <div>
+
+        </div>
+
+        <div class="text-skin-base p-8">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique cum accusantium architecto nostrum itaque cupiditate fugiat unde blanditiis asperiores fugit quo dolore atque maiores accusamus consequatur, corrupti placeat dolores quaerat rerum illum veniam reiciendis mollitia voluptatibus dicta? Repellat mollitia voluptatem doloremque eaque odit qui ut expedita totam ipsam corrupti sed praesentium iste commodi hic vero maxime omnis nam non, consectetur porro unde nihil dolore dolor! Quod porro quidem voluptatibus beatae blanditiis nisi iste magni suscipit nemo natus exercitationem iure saepe id nulla, consequuntur fugit nesciunt impedit. Beatae dolor ut in quia dicta facere eius? Nemo cumque, perferendis modi, corporis expedita ea rerum at inventore perspiciatis deserunt provident facere ipsam vero fugiat illo nisi nesciunt accusantium harum consequuntur omnis eos, obcaecati suscipit distinctio! Deserunt maiores rem reprehenderit. Deserunt nam tenetur quisquam explicabo corporis accusamus! Aut quibusdam a et aspernatur quisquam quaerat! Porro, id. Est odio fugiat assumenda alias. Accusantium dolore, eum cumque sit architecto voluptatem eos dicta omnis voluptate ipsam nemo mollitia quod. Deleniti molestiae quaerat, alias nobis est necessitatibus, voluptas qui placeat doloremque cupiditate numquam vel itaque commodi tempore quae iure dolore quia eos voluptatibus exercitationem. Odio excepturi beatae, possimus incidunt quisquam minima porro nisi, nulla laborum explicabo quidem similique laudantium obcaecati velit et quibusdam saepe fugit, omnis consectetur at repudiandae? Hic nihil delectus illum dolores necessitatibus natus eveniet voluptatem tempore sed. Exercitationem distinctio voluptas beatae quod maxime ipsam aperiam. Ab, laudantium fugiat. Neque voluptate molestias esse saepe? Iste perspiciatis, iure iusto pariatur, quo possimus sapiente consectetur veniam ex reprehenderit molestiae aperiam quas modi voluptates quisquam nesciunt nihil dicta voluptatum, magni accusantium voluptate! Veniam, itaque corrupti odit repellat eaque asperiores excepturi suscipit quia eveniet assumenda! Laudantium tempora ullam numquam molestiae natus molestias! Repellendus rerum, perspiciatis vero tenetur possimus expedita debitis. Saepe eveniet reiciendis vero aperiam. Unde quam similique velit quas!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique cum accusantium architecto nostrum itaque cupiditate fugiat unde blanditiis asperiores fugit quo dolore atque maiores accusamus consequatur, corrupti placeat dolores quaerat rerum illum veniam reiciendis mollitia voluptatibus dicta? Repellat mollitia voluptatem doloremque eaque odit qui ut expedita totam ipsam corrupti sed praesentium iste commodi hic vero maxime omnis nam non, consectetur porro unde nihil dolore dolor! Quod porro quidem voluptatibus beatae blanditiis nisi iste magni suscipit nemo natus exercitationem iure saepe id nulla, consequuntur fugit nesciunt impedit. Beatae dolor ut in quia dicta facere eius? Nemo cumque, perferendis modi, corporis expedita ea rerum at inventore perspiciatis deserunt provident facere ipsam vero fugiat illo nisi nesciunt accusantium harum consequuntur omnis eos, obcaecati suscipit distinctio! Deserunt maiores rem reprehenderit. Deserunt nam tenetur quisquam explicabo corporis accusamus! Aut quibusdam a et aspernatur quisquam quaerat! Porro, id. Est odio fugiat assumenda alias. Accusantium dolore, eum cumque sit architecto voluptatem eos dicta omnis voluptate ipsam nemo mollitia quod. Deleniti molestiae quaerat, alias nobis est necessitatibus, voluptas qui placeat doloremque cupiditate numquam vel itaque commodi tempore quae iure dolore quia eos voluptatibus exercitationem. Odio excepturi beatae, possimus incidunt quisquam minima porro nisi, nulla laborum explicabo quidem similique laudantium obcaecati velit et quibusdam saepe fugit, omnis consectetur at repudiandae? Hic nihil delectus illum dolores necessitatibus natus eveniet voluptatem tempore sed. Exercitationem distinctio voluptas beatae quod maxime ipsam aperiam. Ab, laudantium fugiat. Neque voluptate molestias esse saepe? Iste perspiciatis, iure iusto pariatur, quo possimus sapiente consectetur veniam ex reprehenderit molestiae aperiam quas modi voluptates quisquam nesciunt nihil dicta voluptatum, magni accusantium voluptate! Veniam, itaque corrupti odit repellat eaque asperiores excepturi suscipit quia eveniet assumenda! Laudantium tempora ullam numquam molestiae natus molestias! Repellendus rerum, perspiciatis vero tenetur possimus expedita debitis. Saepe eveniet reiciendis vero aperiam. Unde quam similique velit quas!</p>
+        </div>
+
 
     </div>
 
