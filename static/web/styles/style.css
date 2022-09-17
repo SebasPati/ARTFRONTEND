@@ -177,6 +177,13 @@
     display: none;
 }
 
+/* ACCIÓN AL SCROLLEAR */
+
+/* .navbar.scrolled {
+    @apply glass1;
+  } */
+
+
 /* ESTILOS POSICIÓN */
 
 .c-flex {
