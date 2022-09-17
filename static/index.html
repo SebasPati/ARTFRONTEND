@@ -6,211 +6,444 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./web/styles/tailwind.css">
-    <title>Document</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/web/assets/logo01.png" type="image/x-icon">
+    <title>Home | AMBAR</title>
 </head>
 
 <body class=" bg-gray-100">
 
     <div id="app" v-cloak>
-        <div :class="tema=='tema_1' ? '' : tema=='tema_2' ? 'theme2' : tema=='tema_3' ? 'theme3' : tema=='tema_4' ? 'theme4' : ''"
-            class="bg-skin-normal">
+        <div :class="tema=='tema_1' ? '' : tema=='tema_2' ? 'theme2' : tema=='tema_3' ? 'theme3' : tema=='tema_4' ? 'theme4' : tema=='tema_5' ? 'theme5' : tema=='tema_6' ? 'theme6' : ''"
+            class="min-h-screen bg-skin-normal aparecer2">
 
 
             <!-- HEADER CON NAV -->
             <header>
 
-                <div class=" glass1 justify-between w-screen p-7 fixed z-0 hidden md:flex">
+                <div class=" glass1 flex justify-between w-screen p-2 fixed z-0 place-items-center">
 
-                    <img class="w-3 h-4 z-20" src="./web/assets/logo01.png" alt="logo">
-                    <nav class="flex">
-                        <div class="flex text-skin-base">
-                            <a class="mr-6 ml-6" href="/index.html">Home</a>
-                            <a class="mr-6 ml-6" href="#">Store</a>
-                            <a class="mr-6 ml-6" href="/web/public/wallofartist.html">Artists</a>
-                            <a class="mr-6 ml-6" href="/web/public/wallofcourses.html">Courses</a>
-                            <a class="mr-6 ml-6" href="/web/public/shoppingcart.html">Shop cart</a>
+                    <img :src=" tema=='tema_4' || tema=='tema_5' || tema=='tema_6' ? '/web/assets/logo02.png' : '/web/assets/logo01.png'"
+                        class="w-[3.5%] h-[3.5%] ml-4 aparecer transition-all ease-in-out duration-300" alt="logo">
+                    <nav class="flex font-bahnschrift">
+                        <div class="flex items-center">
+                            <a class="mr-6 ml-6 text-skin-base text-opacity-50 hover:text-opacity-100 transition-all ease-in duration-100"
+                                href="/index.html">Home</a>
+                            <div class="font-xs opacity-30 text-skin-base">|</div>
+                            <a class="mr-6 ml-6 text-skin-base text-opacity-50 hover:text-opacity-100 transition-all ease-in duration-100"
+                                href="/web/public/wallofartworks.html">Store</a>
+                            <div class="font-xs opacity-30 text-skin-base">|</div>
+                            <a class="mr-6 ml-6 text-skin-base text-opacity-50 hover:text-opacity-100 transition-all ease-in duration-100"
+                                href="/web/public/wallofartist.html">Artists</a>
+                            <div class="font-xs opacity-30 text-skin-base">|</div>
+                            <a class="mr-6 ml-6 text-skin-base text-opacity-50 hover:text-opacity-100 transition-all ease-in duration-100"
+                                href="/web/public/shoppingcart.html">Shop cart</a>
                         </div>
-                        <div class=" mr-6 ml-6">
-                            <a class="mr-6 ml-6" href="javascript:void(0);">Log in</a>
-                            <a class="mr-6 ml-6" href="javascript:void(0);">Sign in</a>
+                        <div class="flex items-center mr-6 ml-6">
+                            <a class="mr-4 ml-6 px-5 py-3 text-opacity-80 text-skin-inverted hover:text-skin-base  sus"
+                                href="javascript:void(0);">Log in</a>
+                            <div class="font-xs opacity-30 text-skin-base">|</div>
+                            <a class="mr-6 ml-3 text-skin-base text-opacity-100" href="javascript:void(0);">Sign in</a>
                         </div>
                     </nav>
                     <div class="w-1/2">
-                        <button class="boton1" @click="theme(1)">TEMA 1</button>
-                        <button class="boton1" @click="theme(2)">TEMA 2</button>
-                        <button class="boton1" @click="theme(3)">TEMA 3</button>
-                        <button class="boton1" @click="theme(4)">TEMA 4</button>
+                        <button class="boton1s" @click="theme(1)">TEMA 1</button>
+                        <button class="boton1s" @click="theme(2)">TEMA 2</button>
+                        <button class="boton1s" @click="theme(3)">TEMA 3</button>
+                        <button class="boton1s" @click="theme(4)">TEMA 4</button>
+                        <button class="boton1s" @click="theme(5)">TEMA 5</button>
+                        <button class="boton1s" @click="theme(6)">TEMA 6</button>
 
                     </div>
                 </div>
-
-                <div class="container pt-24">
-                    <div class="block b-1"></div>
-                    <div class="block b-2"></div>
-                    <div class="block b-3"></div>
-                    <div class="block b-4"></div>
-                    <div class="block b-5"></div>
-                    <div class="block b-6"></div>
-                    <div class="block b-7"></div>
-                </div>
-                <div class="overlay"></div>
-                <p class="title">lorem</p>
 
             </header>
 
 
+
             <!-- CUERPO -->
-            <main class=" bg-skin-muted md:mx-24">
+
+            <main class=" pt-24">
 
                 <!-- SECTION Publicity -->
-                <section class=" text-skin-inverted c-flex flex-col h-screen px-5 ">
-                    <h2 class="hidden md:flex mb-6">The best place for the best works of art!</h2>
+                <section
+                    class=" text-skin-inverted c-flex flex-col md:h-screen  px-5 py-5 md:py-0 bg-skin-muted rounded-t-lg">
+                    <h2
+                        class="title-font sm:text-4xl text-3xl  md:mb-14 font-medium text-white py-5 md:py-0 text-center">
+                        The
+                        gallery you
+                        needed
+                    </h2>
                     <div class=" md:flex md:mt-3 flex flex-col justify-center items-center  md:flex-row">
                         <div class=" h-4/6  md:h-auto flex flex-col justify-between items-center ">
-                            <h2 class="text-center md:hidden mb-3">The best place for the best works of art!</h2>
+
                             <div
-                                class="bg-gray-400 h-[400px] w-[250px] md:h-[450px] md:w-[375px] bg-[url('https://img.freepik.com/fotos-premium/collage-arte-contemporaneo-escultura-renacentista-cabeza-esqueleto_161568-9739.jpg?w=2000')] bg-cover bg-center bg-no-repeat">
+                                class="bg-gray-400 h-[400px] w-[250px] md:h-[450px] md:w-[375px] bg-[url('https://images.pexels.com/photos/4585185/pexels-photo-4585185.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] bg-cover bg-center bg-no-repeat">
                             </div>
                         </div>
-                        <p class="mt-3 text-center md:w-80 md:first-letter:ml-4 ">Lorem ipsum dolor sit amet,
-                            consectetur
-                            adipisicing elit.
-                            Necessitatibus
-                            asperiores
-                            laudantium fuga
-                            sapiente in </p>
+                        <div class="flex flex-col justify-center items-center md:pl-10">
+                            <p class="mt-3 md:w-80 text-center">Many people have already entered this page to buy and
+                                upload the best works, here nobody stops you, you can be whoever you want. </p>
+                            <div class="place-self-center bg-skin-base h-[1.2px] lg:w-1/2 w-full mt-9 bg-opacity-20">
+                            </div><!-- LINE -->
+                            <div class="container py-5 mx-auto">
+                                <div class="flex flex-wrap justify-around -m-4 text-center">
+                                    <div class="p-4 sm:w-1/2 w-1/2">
+                                        <h2 class="title-font font-medium sm:text-4xl text-3xl text-white">2.7K</h2>
+                                        <p class="leading-relaxed">Art Lovers</p>
+                                    </div>
+                                    <div class="p-4 sm:w-1/2 w-1/2">
+                                        <h2 class="title-font font-medium sm:text-4xl text-3xl text-white">1.8K</h2>
+                                        <p class="leading-relaxed">Artists</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
                 <!-- SECTION publicity2 -->
-                <section class=" c-flex flex-col h-screen px-5 md:flex-row">
-                    <div
-                        class="bg-gray-400 w-[300px] h-[200px] md:w-[600px] md:h-[400px] bg-[url('https://img.freepik.com/fotos-premium/estatua-venus-milo-imagen-neon-colorido-concepto-creativo-escultura-griega-antigua-venus-o-cabeza-afrodita-webpunk-vaporwave-estilo-artistico-surrealista-efectos-duotono-rosa-azul_155402-508.jpg')] bg-center- bg-cover bg-no-repeat">
+                <section class="bg-skin-base text-skin-base body-font rounded-b-lg">
+                    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+                        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0 mb-10">
+                            <img class="object-cover object-center rounded" alt="hero"
+                                src="https://img.freepik.com/fotos-premium/estatua-venus-milo-imagen-neon-colorido-concepto-creativo-escultura-griega-antigua-venus-o-cabeza-afrodita-webpunk-vaporwave-estilo-artistico-surrealista-efectos-duotono-rosa-azul_155402-508.jpg">
+                        </div>
+                        <div
+                            class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                            <h2 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-skin-muted">The best works
+                                are
+                                in this place, and the best artists too!
+                            </h2>
+                            <p class="mb-8 leading-relaxed">Did you ever think something like this would be possible? A
+                                virtual gallery? It is already done! We take care that your productions reach everyone.
+                            </p>
+                            <div class="flex justify-center">
+                                <button class="boton1">See the artists</button>
+                                <button class="boton3">See
+                                    the artworks</button>
+                            </div>
+                        </div>
                     </div>
-                    <p class="mt-4 text-center md:w-80 md:ml-6">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ipsum
-                        incidunt
-                        sed ex
-                        consequatur
-                        cupiditate,
-                        illum provident laboriosam nemo. Ad, magnam?</p>
-                </section>
-
-                <!-- SECTION carrousel -->
-                <section class=" c-flex flex-col h-36 px-5 py-2">
-                    <div class="bg-gray-500 w-full h-full">carrusel</div>
                 </section>
 
                 <!-- SECTION tiktok video -->
                 <section
-                    class=" text-skin-muted c-flex flex-col h-screen px-5 md:flex md:flex-row md:justify-evenly m-20 bg-skin-disabled">
-                    <iframe src="./web/assets/index/videotiktok.mp4" class="w-[220px] h-[390px]"></iframe>
-                    <div class="mt-3 text-center">
-                        <p>Do you want to see more?</p>
-                        <button class="mt-2 bg-white border border-black py-1 px-2">Log in</button>
+                    class=" text-skin-muted c-flex flex-col h-screen px-5 md:flex md:flex-row md:justify-evenly md:m-20 bg-skin-disabled rounded-lg">
+                    <iframe src="./web/assets/index/videotiktok.mp4" class="w-[220px] h-[390px] boton2"></iframe>
+                    <div class="mt-3 text-center text-xl">
+                        <h2 class="title-font sm:text-4xl text-3xl  md:mb-2 font-medium  py-5 md:py-0 text-center"
+                            :class="tema=='tema_1' ? 'text-black' :'text-white'">
+                            Do you want to see more?
+                        </h2>
+                        <p>We are wating for people like you</p>
+                        <div class="place-self-center bg-skin-base h-[1.2px] w-full mt-9 bg-opacity-20">
+                        </div>
+
+                        <button class="boton4">Log in</button>
                     </div>
                 </section>
 
                 <!-- SECTION artists -->
-                <section class=" c-flex flex-col h-screen ">
-
-                    <h2 class="text-skin-base">Some artists from here</h2>
-
-                    <div class="bg-skin-accent w-full md:w-[500px] h-3/5 mt-3 flex flex-col justify-evenly ">
-                        <div class="c-flex">
-                            <div
-                                class="w-24 h-20 md:h-28 md:w-32 bg-[url('https://rcdn.rolloid.net/uploads/2016/03/Que-sienten-las-personas-que-sufren-ansiedad-01.jpg')] bg-center bg-cover bg-no-repeat">
+                <section class="text-gray-400 body-font bg-gray-900">
+                    <div class="container px-5 py-24 mx-auto">
+                        <div class="flex flex-wrap w-full mb-20">
+                            <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+                                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">Some
+                                    artists
+                                    from here</h1>
+                                <div class="h-1 w-20 bg-skin-accent rounded"></div>
                             </div>
-                            <div class="border border-white w-40 h-20 md:h-28 md:w-72 md:ml-4 ">
-                                ppp</div>
+                            <p class="lg:w-1/2 w-full leading-relaxed text-gray-400 text-opacity-90">Whatever
+                                cardigan
+                                tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke
+                                farm-to-table.
+                                Franzen you probably haven't heard of them man bun deep jianbing selfies
+                                heirloom prism
+                                food truck ugh squid celiac humblebrag.</p>
                         </div>
-                        <div class="c-flex">
-                            <div
-                                class="w-24 h-20 md:h-28 md:w-32 bg-[url('https://images.ecestaticos.com/-f-ySwBW7Mp-ggDplxXveJ0bCNQ=/0x0:991x445/992x446/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F743%2F930%2F270%2F743930270aabd407a594e0f8b8d5dbe9.jpg')]  bg-center bg-cover bg-no-repeat">
+                        <div class="flex flex-wrap -m-4">
+                            <div class="xl:w-1/4 md:w-1/2 p-4">
+                                <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
+                                    <img class="h-40 rounded w-full object-cover object-center mb-6"
+                                        src="https://rcdn.rolloid.net/uploads/2016/03/Que-sienten-las-personas-que-sufren-ansiedad-01.jpg"
+                                        alt="content">
+                                    <h3 class="tracking-widest text-indigo-400 text-xs font-medium title-font">
+                                        SUBTITLE
+                                    </h3>
+                                    <h2 class="text-lg text-white font-medium title-font mb-4">Nombre del
+                                        artista</h2>
+                                    <p class="leading-relaxed text-base">Fingerstache flexitarian street art
+                                        8-bit
+                                        waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+                                </div>
                             </div>
-                            <div class="border border-white w-40  h-20 md:h-28 md:w-72 md:ml-4">ppp</div>
-                        </div>
-                        <div class="c-flex">
-                            <div
-                                class="w-24 h-20 md:h-28 md:w-32 bg-[url('https://rcdn.rolloid.net/uploads/2016/03/Que-sienten-las-personas-que-sufren-ansiedad-01.jpg')] bg-center bg-cover bg-no-repeat">
+                            <div class="xl:w-1/4 md:w-1/2 p-4">
+                                <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
+                                    <img class="h-40 rounded w-full object-cover object-center mb-6"
+                                        src="https://media.istockphoto.com/photos/portrait-of-male-artist-working-on-painting-in-studio-male-artist-picture-id1318428313?k=20&m=1318428313&s=612x612&w=0&h=TVC1AUzhJM3UdnQEr1hYeYtTCMHFSvx3FnOJan-n9zo=">
+                                    <h3 class="tracking-widest text-indigo-400 text-xs font-medium title-font">
+                                        SUBTITLE
+                                    </h3>
+                                    <h2 class="text-lg text-white font-medium title-font mb-4">Colosseum Roma
+                                    </h2>
+                                    <p class="leading-relaxed text-base">Fingerstache flexitarian street art
+                                        8-bit
+                                        waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+                                </div>
                             </div>
-                            <div class="border border-white w-40 h-20 md:h-28 md:w-72 md:ml-4 ">
-                                ppp</div>
+                            <div class="xl:w-1/4 md:w-1/2 p-4">
+                                <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
+                                    <img class="h-40 rounded w-full object-cover object-center mb-6"
+                                        src="https://media.istockphoto.com/photos/the-woman-holds-a-palette-in-her-hands-at-home-art-studio-picture-id1255927987?s=612x612"
+                                        alt="content">
+                                    <h3 class="tracking-widest text-indigo-400 text-xs font-medium title-font">
+                                        SUBTITLE
+                                    </h3>
+                                    <h2 class="text-lg text-white font-medium title-font mb-4">Great Pyramid of
+                                        Giza
+                                    </h2>
+                                    <p class="leading-relaxed text-base">Fingerstache flexitarian street art
+                                        8-bit
+                                        waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+                                </div>
+                            </div>
+                            <div class="xl:w-1/4 md:w-1/2 p-4">
+                                <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
+                                    <img class="h-40 rounded w-full object-cover object-center mb-6"
+                                        src="https://media.istockphoto.com/photos/girl-painting-in-the-art-studio-picture-id1190705049?s=612x612"
+                                        alt="content">
+                                    <h3 class="tracking-widest text-indigo-400 text-xs font-medium title-font">
+                                        SUBTITLE
+                                    </h3>
+                                    <h2 class="text-lg text-white font-medium title-font mb-4">San Francisco
+                                    </h2>
+                                    <p class="leading-relaxed text-base">Fingerstache flexitarian street art
+                                        8-bit
+                                        waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
 
+
                 <!-- SECTION Invitation to sign in -->
-                <section
-                    class="bg-skin-base text-skin-base c-flex  h-24 my-6 mx-3 px-5 md:flex md:justify-around md:mx-32">
-                    <p>New here?</p>
-                    <button class="ml-2 bg-white border border-black py-1 px-2">Sign in</button>
+                <section class=" bg-skin-normal text-skin-muted body-font">
+                    <div class="container px-5 py-24 mx-auto">
+                        <div class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto">
+                            <h1 class="flex-grow sm:pr-16 text-2xl font-medium title-font mb-10 mb:mb-0">Don't forget,
+                                everything you do here will grow infinitely!</h1>
+                            <button class="boton1 w-20">Log in</button>
+                        </div>
+                    </div>
                 </section>
 
                 <!-- SECTION some artworks (modificar para que sea dinamico) -->
-                <section>
-                    <section
-                        class=" flex justify-around items-center h-screen  md:h-auto px-5 flex-wrap content-evenly md:px-24">
-
-                        <div class=" overflow-hidden md:w-[250px] md:h-[250px]">
-                            <div
-                                class="w-20 h-20 md:w-[250px] md:h-[250px] mb-7 bg-[url('https://psicocode.com/wp-content/uploads/2020/12/cuadro-renacimiento.jpg')] bg-center bg-cover bg-no-repeat  hover:md:w-[280px] hover:md:h-[280px] transition-all ease-in-out duration-300">
+                <section class="bg-skin-muted text-skin-inverted body-font rounded-t-lg">
+                    <div class="container px-5 py-24 mx-auto flex flex-wrap">
+                        <div class="flex w-full mb-20 flex-wrap">
+                            <h1 class="sm:text-3xl text-2xl font-medium title-font text-white lg:w-1/3 lg:mb-0 mb-4">
+                                Some of the works of art posted on this site</h1>
+                            <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed  font-bold"
+                                :class="tema=='tema_1' || tema=='tema_3'|| tema=='tema_6' ? 'text-black' :'text-white'">
+                                You will have a super close contact with those people you admire so much. The artists of
+                                this site are willing to satisfy your needs, you will never feel that it could be
+                                better.
+                            </p>
+                        </div>
+                        <div class="flex flex-wrap md:-m-2 -m-1">
+                            <div class="flex flex-wrap w-1/2">
+                                <div class="md:p-2 p-1 w-1/2">
+                                    <img alt="gallery" class="w-full object-cover h-full object-center block"
+                                        src="https://dummyimage.com/500x300">
+                                </div>
+                                <div class="md:p-2 p-1 w-1/2">
+                                    <img alt="gallery" class="w-full object-cover h-full object-center block"
+                                        src="https://dummyimage.com/501x301">
+                                </div>
+                                <div class="md:p-2 p-1 w-full">
+                                    <img alt="gallery" class="w-full h-full object-cover object-center block"
+                                        src="https://dummyimage.com/600x360">
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap w-1/2">
+                                <div class="md:p-2 p-1 w-full">
+                                    <img alt="gallery" class="w-full h-full object-cover object-center block"
+                                        src="https://dummyimage.com/601x361">
+                                </div>
+                                <div class="md:p-2 p-1 w-1/2">
+                                    <img alt="gallery" class="w-full object-cover h-full object-center block"
+                                        src="https://dummyimage.com/502x302">
+                                </div>
+                                <div class="md:p-2 p-1 w-1/2">
+                                    <img alt="gallery" class="w-full object-cover h-full object-center block"
+                                        src="https://dummyimage.com/503x303">
+                                </div>
                             </div>
                         </div>
-                        <div class=" overflow-hidden md:w-[250px] md:h-[250px]">
-                            <div
-                                class="w-20 h-20 md:w-[250px] md:h-[250px] mb-7 bg-[url('https://qph.cf2.quoracdn.net/main-qimg-d0d39682dd7abf1eb3b93ce6ee298ed0.webp')] bg-center bg-cover bg-no-repeat hover:bg-contain hover:md:w-[280px] hover:md:h-[280px] transition-all ease-in-out duration-300">
-                            </div>
-                        </div>
-                        <div class=" overflow-hidden md:w-[250px] md:h-[250px]">
-                            <div
-                                class="w-20 h-20 md:w-[250px] md:h-[250px] mb-7 bg-[url('https://psicocode.com/wp-content/uploads/2020/12/cuadro-renacimiento.jpg')] bg-center bg-cover bg-no-repeat hover:bg-contain hover:md:w-[280px] hover:md:h-[280px] transition-all ease-in-out duration-300">
-                            </div>
-                        </div>
-                        <!-- REPETIR 12 VECES  -->
-
-
-                    </section>
+                    </div>
                 </section>
 
                 <!-- SECTION artist of the year -->
-                <section class="c-flex  h-screen flex-col px-5">
-                    tarjetas
+                <section class="text-black bg-skin-accent body-font rounded-b-lg">
+                    <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+                        <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero"
+                            src="https://cdn.pixabay.com/photo/2019/11/12/23/00/artist-4622221_960_720.jpg">
+                        <div class="text-center lg:w-2/3 w-full">
+                            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium "
+                                :class="tema=='tema_4' || tema=='tema_5' || tema=='tema_6' ? 'text-black' : 'text-white'">
+                                This is the best
+                                artist of the
+                                year, congratulations!</h1>
+                            <p class="leading-relaxed mb-8">Meggings kinfolk echo park stumptown DIY, kale chips
+                                beard
+                                jianbing tousled. Chambray dreamcatcher trust fund, kitsch vice godard disrupt
+                                ramps
+                                hexagon mustache umami snackwave tilde chillwave ugh. Pour-over meditation
+                                PBR&amp;B
+                                pickled ennui celiac mlkshk freegan photo booth af fingerstache pitchfork.</p>
+                            <div class="flex justify-center">
+                                <button class="boton2">See the artist</button>
+                                <button class="boton1">Join me!</button>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </main>
 
             <!-- FOOTER -->
             <!-- bg-skin-disabled font-bahnschrift text-skin-base -->
-            <footer class="bg-skin-base text-skin-base flex flex-col justify-between p-5 md:mt-44">
+            <footer class="font-quicksand">
 
-                <div>
-                    <div class="flex items-center">
-                        <img src="./web/assets/index/icons8-mail-30.png" alt="">
-                        <p class="ml-1">ambar_web@hotmail.com</p>
+
+                <div
+                    class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+                    <div
+                        class="w-64 flex-shrink-0 md:mx-0 mx-auto md:text-left md:mt-0 mt-10 flex items-center md:justify-start justify-center place-items-center content-center">
+                        <img :src=" tema=='tema_4' || tema=='tema_5' || tema=='tema_6' ? '/web/assets/logo02L.png' : '/web/assets/logo01L.png'"
+                            class="w-[60%] h-[60%] aparecer transition-all ease-in-out duration-1000" alt="logo">
                     </div>
-                    <div class="flex items-center">
-                        <img src="./web/assets/index/icons8-facebook.svg" alt="">
-                        <p class="ml-1">AmbarWeb</p>
-                    </div>
-                    <div class="flex items-center">
-                        <img src="./web/assets/index/icons8-instagram.svg" alt="">
-                        <p class="ml-1">Ambar_web</p>
-                    </div>
-                    <div class="flex items-center">
-                        <img src="./web/assets/index/icons8-whatsapp.svg" alt="">
-                        <p class="ml-1">+54 355 451568</p>
+                    <div class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
+                        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                            <h2 class="title-font font-medium text-skin-accent tracking-widest text-sm mb-3 ">CATEGORIES
+                            </h2>
+                            <nav class="list-none mb-10">
+                                <li>
+                                    <a class="text-skin-base text-opacity-60 hover:text-opacity-100">First Link</a>
+                                </li>
+                                <li>
+                                    <a class="text-skin-base text-opacity-60 hover:text-opacity-100">Second Link</a>
+                                </li>
+                                <li>
+                                    <a class="text-skin-base text-opacity-60 hover:text-opacity-100">Third Link</a>
+                                </li>
+                                <li>
+                                    <a class="text-skin-base text-opacity-60 hover:text-opacity-100">Fourth Link</a>
+                                </li>
+                            </nav>
+                        </div>
+                        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                            <h2 class="title-font font-medium text-skin-accent tracking-widest text-sm mb-3 ">CATEGORIES
+                            </h2>
+                            <nav class="list-none mb-10">
+                                <li>
+                                    <a class="text-skin-base text-opacity-60 hover:text-opacity-100">First Link</a>
+                                </li>
+                                <li>
+                                    <a class="text-skin-base text-opacity-60 hover:text-opacity-100">Second Link</a>
+                                </li>
+                                <li>
+                                    <a class="text-skin-base text-opacity-60 hover:text-opacity-100">Third Link</a>
+                                </li>
+                                <li>
+                                    <a class="text-skin-base text-opacity-60 hover:text-opacity-100">Fourth Link</a>
+                                </li>
+                            </nav>
+                        </div>
+                        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                            <h2 class="title-font font-medium text-skin-accent tracking-widest text-sm mb-3 ">CATEGORIES
+                            </h2>
+                            <nav class="list-none mb-10">
+                                <li>
+                                    <a class="text-skin-base text-opacity-60 hover:text-opacity-100">First Link</a>
+                                </li>
+                                <li>
+                                    <a class="text-skin-base text-opacity-60 hover:text-opacity-100">Second Link</a>
+                                </li>
+                                <li>
+                                    <a class="text-skin-base text-opacity-60 hover:text-opacity-100">Third Link</a>
+                                </li>
+                                <li>
+                                    <a class="text-skin-base text-opacity-60 hover:text-opacity-100">Fourth Link</a>
+                                </li>
+                            </nav>
+                        </div>
+                        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                            <h2 class="title-font font-medium text-skin-accent tracking-widest text-sm mb-3 ">CATEGORIES
+                            </h2>
+                            <nav class="list-none mb-10">
+                                <li>
+                                    <a class="text-skin-base text-opacity-60 hover:text-opacity-100">First Link</a>
+                                </li>
+                                <li>
+                                    <a class="text-skin-base text-opacity-60 hover:text-opacity-100">Second Link</a>
+                                </li>
+                                <li>
+                                    <a class="text-skin-base text-opacity-60 hover:text-opacity-100">Third Link</a>
+                                </li>
+                                <li>
+                                    <a class="text-skin-base text-opacity-60 hover:text-opacity-100">Fourth Link</a>
+                                </li>
+                            </nav>
+                        </div>
                     </div>
                 </div>
-                <div class="flex justify-around">
-                    <div>logo</div>
-                    <p>creador</p>
+                <div class="bg-skin-muted bg-opacity-20">
+                    <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+                        <p class="text-gray-500 text-sm text-center sm:text-left">© 2022 MindHub —
+                            <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1"
+                                target="_blank">@knyttneve</a>
+                        </p>
+                        <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+                            <a class="text-gray-500">
+                                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    class="w-5 h-5" viewBox="0 0 24 24">
+                                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                                </svg>
+                            </a>
+                            <a class="ml-3 text-gray-500">
+                                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    class="w-5 h-5" viewBox="0 0 24 24">
+                                    <path
+                                        d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a class="ml-3 text-gray-500">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                                </svg>
+                            </a>
+                            <a class="ml-3 text-gray-500">
+                                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                                    <path stroke="none"
+                                        d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                                    </path>
+                                    <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                                </svg>
+                            </a>
+                        </span>
+                    </div>
                 </div>
-
             </footer>
         </div>
     </div>
+
     <script src="https://unpkg.com/vue@3"></script>
-    <script src="./web/scripts/index.js"></script>
     <script src="./recursos.js"></script>
 </body>
 
