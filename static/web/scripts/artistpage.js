@@ -1,4 +1,5 @@
 
+
 const app = Vue.createApp({
     data() {
         return {
@@ -9,6 +10,7 @@ const app = Vue.createApp({
         this.initialTheme();
     },
     mounted() {
+        this.vueScrollNav();
     },
     methods: {
         theme(a) {
@@ -20,6 +22,16 @@ const app = Vue.createApp({
                 this.theme(JSON.parse(localStorage.getItem('theme')))
             }
         },
+        vueScrollNav() {
+            const navbar = this.$refs.navbar;
+            window.addEventListener("scroll", () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add("glass1");
+                } else {
+                    navbar.classList.remove("glass1");
+                }
+            })
+        }
     },
     computed: {
     }
