@@ -10,11 +10,11 @@
     <title>Artist den</title>
 </head>
 
-<body class=" bg-gray-100">
+<body>
 
     <div id="app" v-cloak>
-        <div :class="tema=='tema_1' ? '' : tema=='tema_2' ? 'theme2' : tema=='tema_3' ? 'theme3' : tema=='tema_4' ? 'theme4' : ''"
-            class="w-full min-h-screen flex flex-col bg-skin-normal aparecer2">
+        <div :class="tema=='tema_1' ? '' : tema=='tema_2' ? 'theme2' : tema=='tema_3' ? 'theme3' : tema=='tema_4' ? 'theme4' : tema=='tema_5' ? 'theme5' : tema=='tema_6' ? 'theme6' : ''"
+            class="w-full min-h-screen flex flex-col aparecer2 bg-skin-normal">
 
 
             <!-- HEADER CON NAV -->
@@ -22,7 +22,7 @@
 
                 <div class=" glass1 flex justify-between w-screen p-2 fixed z-0 place-items-center">
 
-                    <img :src=" tema=='tema_4' ? '/web/assets/logo02.png' : '/web/assets/logo01.png'" class="w-[3.5%] h-[3.5%] ml-4 aparecer transition-all ease-in-out duration-300" alt="logo">
+                    <img :src=" tema=='tema_4' || tema=='tema_5' || tema=='tema_6' ? '/web/assets/logo02.png' : '/web/assets/logo01.png'" class="w-[3.5%] h-[3.5%] ml-4 aparecer transition-all ease-in-out duration-300" alt="logo">
                     <nav class="flex font-bahnschrift">
                         <div class="flex items-center">
                             <a class="mr-6 ml-6 text-skin-base text-opacity-50 hover:text-opacity-100 transition-all ease-in duration-100" href="/index.html">Home</a>
@@ -46,7 +46,7 @@
 
 
             <!-- CUERPO -->
-            <main class=" bg-skin-muted mt-24">
+            <main class="mt-24">
 
                 <!-- ARRIBA -->
                 <section>
@@ -54,10 +54,14 @@
 
                 </section>
             
+                <section class="p-12 text-skin-base">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quo laboriosam totam amet. Perferendis voluptates aperiam autem veritatis! Unde ex quisquam asperiores quasi dignissimos, perspiciatis repudiandae? Aut id expedita eveniet atque, non ullam corporis assumenda animi deserunt eius quibusdam excepturi iusto, maxime ipsa dolores, amet suscipit modi consectetur esse laudantium labore rem quam. Voluptatem laboriosam, ea dolor aliquam delectus fuga corporis numquam voluptatum quisquam facere cupiditate in quasi itaque. Corrupti accusamus saepe et natus porro voluptatum sed doloremque sint excepturi dolorum provident aliquam voluptate cumque officiis molestiae, numquam commodi dignissimos quaerat inventore at quasi ratione? Distinctio, ullam quaerat minus vel saepe rem placeat porro recusandae itaque odio aliquam nemo rerum soluta est fugiat voluptas. Aspernatur exercitationem quisquam asperiores eos ut laborum! Deleniti, impedit dicta tempore aperiam at, ipsum placeat vero facere nisi ad cum cumque quaerat architecto consequatur, officiis unde. Ipsum illo necessitatibus ea consequuntur expedita nostrum reprehenderit delectus perspiciatis! Commodi veritatis corporis dolores nemo possimus voluptatibus nam magnam, molestias nostrum earum praesentium! Nihil modi magnam maxime, minus praesentium sit itaque sunt quisquam suscipit deserunt molestias eaque accusantium ex, perferendis aperiam et quasi cumque provident dolore? Nobis architecto cumque repellendus id excepturi fuga! Sapiente officia rem laboriosam, est inventore voluptatem alias iusto ratione dolorum odit itaque deleniti. Voluptatem, dolorem aspernatur architecto minima atque, molestias obcaecati reprehenderit, exercitationem odio distinctio iste quae culpa consequatur consectetur magnam esse. Ea consequuntur facilis asperiores molestias mollitia eveniet culpa, sint quia veritatis nulla dolor fugiat soluta obcaecati blanditiis sit repellat expedita in error ab officiis veniam? Aspernatur porro repellat tenetur. Molestias, eius reiciendis atque harum ipsam, dignissimos porro natus, ut nobis tenetur dolore velit? Molestiae commodi, numquam architecto quidem, cumque est dolorum debitis ipsum nihil deserunt eum sint recusandae suscipit vitae labore fugiat ipsam perspiciatis voluptates nemo rem pariatur asperiores ullam optio quaerat. Laboriosam, exercitationem!
+                </section>
+            
                 <!-- PRODUCTOS -->
                 <section>
 
-                    <div class="bg-skin-normal">
+                    <div class="">
                         <div class="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
                           <h2 class="text-2xl font-bold tracking-tight text-gray-900">Customers also purchased</h2>
                       
@@ -94,6 +98,8 @@
                 <button class="boton1s" @click="theme(2)">TEMA 2</button>
                 <button class="boton1s" @click="theme(3)">TEMA 3</button>
                 <button class="boton1s" @click="theme(4)">TEMA 4</button>
+                <button class="boton1s" @click="theme(5)">TEMA 5</button>
+                <button class="boton1s" @click="theme(6)">TEMA 6</button>
 
             </div>
 
@@ -105,7 +111,7 @@
                     
                 <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
                   <div class="w-64 flex-shrink-0 md:mx-0 mx-auto md:text-left md:mt-0 mt-10 flex items-center md:justify-start justify-center place-items-center content-center">
-                    <img :src=" tema=='tema_4' ? '/web/assets/logo02L.png' : '/web/assets/logo01L.png'" class="w-[60%] h-[60%] aparecer transition-all ease-in-out duration-300" alt="logo">
+                    <img :src=" tema=='tema_4' || tema=='tema_5' || tema=='tema_6' ? '/web/assets/logo02L.png' : '/web/assets/logo01L.png'" class="w-[60%] h-[60%] aparecer transition-all ease-in-out duration-1000" alt="logo">
                   </div>
                   <div class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
                     <div class="lg:w-1/4 md:w-1/2 w-full px-4">

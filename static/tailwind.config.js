@@ -22,6 +22,7 @@ module.exports = {
       backgroundColor:{
         skin:{
           normal: withOpacity('--color-normal'),
+          'cuasi-normal': withOpacity('--color-cuasi-normal'),
           base: withOpacity('--color-button-base'),
           accent: withOpacity('--color-button-accent'),
           muted: withOpacity('--color-button-muted'),
@@ -29,13 +30,12 @@ module.exports = {
         }
       },
       gradientColorStops:{
-        stop:{
           normal: withOpacity('--color-normal'),
+          'cuasi-normal': withOpacity('--color-cuasi-normal'),
           base: withOpacity('--color-button-base'),
           accent: withOpacity('--color-button-accent'),
           muted: withOpacity('--color-button-muted'),
           disabled: withOpacity('--color-button-disabled')
-        }
       },
       borderColor: {
          skin:{
@@ -45,13 +45,6 @@ module.exports = {
           muted: withOpacity('--color-button-muted'),
           disabled: withOpacity('--color-button-disabled')
          }
-      },
-      gradientColorStops: {
-        normal: withOpacity('--color-normal'),
-        base: withOpacity('--color-button-base'),
-        accent: withOpacity('--color-button-accent'),
-        muted: withOpacity('--color-button-muted'),
-        disabled: withOpacity('--color-button-disabled')
       },
       fontFamily: {
         bahnschrift : ['Bahnschrift','sans-serif'],
